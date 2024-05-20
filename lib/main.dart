@@ -10,6 +10,7 @@ import 'theme/theme.dart';
 import 'utils/routes_constraints.dart';
 import 'views/home.dart';
 import 'views/not_found_screen.dart';
+import 'views/search.dart';
 
 void main() {
   if (!GetPlatform.isWeb) {
@@ -35,6 +36,10 @@ class MyApp extends StatelessWidget {
         GetPage(
             name: RouteHandler.HOME,
             page: () => const MyHomePage(),
+            transition: Transition.zoom),
+        GetPage(
+            name: RouteHandler.SEARCH,
+            page: () => const SearchScreen(),
             transition: Transition.zoom),
         GetPage(
             name: RouteHandler.QR,

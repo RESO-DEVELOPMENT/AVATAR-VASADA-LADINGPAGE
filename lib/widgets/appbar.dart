@@ -12,9 +12,9 @@ AppBar homeAppbar() {
     surfaceTintColor: Colors.transparent,
     backgroundColor: Colors.transparent,
     centerTitle: true,
-    leadingWidth: 160,
+    leadingWidth: 100,
     leading: Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8),
       child: InkWell(
         onTap: () => Get.toNamed(RouteHandler.HOME),
         child: Image.asset(
@@ -55,12 +55,12 @@ AppBar homeAppbar() {
     ),
     actionsIconTheme: IconThemeData(size: 32, color: Colors.white),
     actions: const [
-      Icon(Icons.facebook),
-      TextButton(onPressed: null, child: Text("VI")),
-      TextButton(onPressed: null, child: Text("EN")),
-      SizedBox(
-        width: 32,
-      )
+      // Icon(Icons.facebook),
+      // TextButton(onPressed: null, child: Text("VI")),
+      // TextButton(onPressed: null, child: Text("EN")),
+      // SizedBox(
+      //   width: 32,
+      // )
     ],
   );
 }

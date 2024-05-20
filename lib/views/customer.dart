@@ -63,14 +63,12 @@ class _CustomerScreenState extends State<CustomerScreen> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      backgroundColor: Colors.transparent,
-      appBar: homeAppbar(),
+      // appBar: homeAppbar(),
       body: DecoratedBox(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage(
-                "https://firebasestorage.googleapis.com/v0/b/pos-system-47f93.appspot.com/o/files%2Fbg2.jpg?alt=media&token=beca8c3e-7e08-415c-a795-73a5da9d955d"),
-            fit: BoxFit.contain,
+            image: AssetImage("assets/images/bg-home.png"),
+            fit: BoxFit.cover,
           ),
         ),
         child: Builder(builder: (context) {

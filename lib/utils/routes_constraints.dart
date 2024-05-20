@@ -2,6 +2,7 @@
 
 class RouteHandler {
   static const String QR = "/qr";
+  static const String SEARCH = "/search";
   static const String HOME = "/";
   static const String NAV = "/nav";
   static const String WELCOME = "/welcome";
